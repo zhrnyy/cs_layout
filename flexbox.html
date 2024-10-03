@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Latihan</title>
+    <style>
+        body{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        header{
+            background-color: violet;
+            padding: 50px 0;
+        }
+        .content {
+            display: flex;
+        }
+        .sidebar {
+            flex: 1;   
+        }
+        .sidebar aside{
+            background-color: lightskyblue;
+            padding: 30px 0;
+            
+        }
+        .sidebar nav {
+            background-color: salmon;
+            padding: 50px 0;
+            
+        }
+        main {
+            background-color: yellowgreen;
+            flex: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: grey;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <div class="content">
+            <div class="sidebar">
+                <aside>aside</aside>
+                <nav>nav</nav>
+            </div>
+            <main>main</main>
+        </div>
+        <footer>footer</footer>
+
+    </div>
+</body>
+</html>

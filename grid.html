@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox - Latihan</title>
+    <style>
+        body{
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .container {
+            box-sizing: border-box;
+            display: grid;
+            grid-template-areas: "header header"
+                                 "aside main"
+                                 "nav main"
+                                 "footer footer";
+            grid-template-columns: 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr 1.3fr;
+        }
+        header{
+            background-color: violet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: header;
+        }
+        aside{
+            background-color: lightskyblue;
+            padding: 30px 0;
+            grid-area: aside;
+        }
+        nav {
+            background-color: salmon;
+            padding: 50px 0;
+            grid-area: nav;
+        }
+        main {
+            background-color: yellowgreen;
+            box-sizing: border-box;
+            flex: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: main;
+        }
+
+        footer {
+            background-color: grey;
+            padding: 20px 0;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <aside>aside</aside>
+        <nav>nav</nav>
+        <main>main</main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
